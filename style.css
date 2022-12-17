@@ -1,0 +1,27 @@
+#todoInput{
+  width: 224px;
+}
+
+#myInput{
+  width: 112px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+input:checked ~ span {
+    text-decoration: line-through;
+}
+
+table {
+    border-spacing: 1em 0.5em;
+    padding: 0 2em 1em 0;
+  }
+  
+  td {
+    width: 5.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+  }

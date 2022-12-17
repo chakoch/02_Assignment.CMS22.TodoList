@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <h2>My ToDo list</h2>
+
+    <br />
+    <label for="title">Lägg till en ToDo</label>
+    <br />
+
+    <input type="text" placeholder="Börja lägga till" id="todoInput"/>
+    <br /><br />
+    
+    <input type="date" id="dateInput">
+
+    <select class="category">
+      <option value="Hushållsarbete">Hushållsarbete</option>
+      <option value="Jobb">Jobb</option>
+    </select>
+    <br /><br />
+    <button id="addBtn">Lägg till</button>
+    <br /><br />
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Sök ToDo..." title="Type in a todo">
+    <br><br>
+
+    <input type="radio" id="allRadioBtn" name="radioBtn" value="Alla" />
+    <label for="all">Alla</label>
+    <input
+      type="radio"
+      id="personalRadioBtn"
+      name="radioBtn"
+      value="Hushållsarbete"
+    />
+    <label for="private">Hushållsarbete</label>
+    <input type="radio" id="workRadioBtn" name="radioBtn" value="Jobb" />
+    <label for="work">Jobb</label>
+
+    <h3>Att göra</h3>
+    <table id="todoTable" class="todoTable">
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
